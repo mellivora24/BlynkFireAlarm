@@ -1,0 +1,174 @@
+<mxfile host="app.diagrams.net" modified="2023-12-14T05:59:51.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="pIHJujMLhGB3emCyjgGO" version="22.1.8" type="device">
+  <diagram name="Trang-1" id="kDT5qhBuw1SdSmtGr0MF">
+    <mxGraphModel dx="1290" dy="522" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dYy4fB87pJzUasIUXKz9-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1410" y="550" width="790" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-39" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Với Arduino&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="285" y="270" width="660" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-40" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Với ESP8266&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1450" y="300" width="660" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Hàm setup()&lt;br&gt;cấu hình mạch và khởi tạo Serial + Module SIM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="772" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="417" width="940" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-1" target="dYy4fB87pJzUasIUXKz9-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Hàm loop() lặp lại các câu lệnh trong này&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="555" y="427" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-5" value="&lt;font size=&quot;3&quot;&gt;Tạo một JSON và lưu các giá trị của cảm biến vào đó&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="302.5" y="617" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-6" value="&lt;font size=&quot;3&quot;&gt;Gửi JSON tới ESP8266&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="497.5" y="637" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-5" target="dYy4fB87pJzUasIUXKz9-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-8" value="&lt;font size=&quot;3&quot;&gt;Nếu phát hiện khói&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="467.5" y="747" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-6" target="dYy4fB87pJzUasIUXKz9-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-10" value="&lt;font size=&quot;3&quot;&gt;Gửi tin nhắn cảnh báo kèm theo số phòng có khói&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="472.5" y="867" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-8" target="dYy4fB87pJzUasIUXKz9-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-12" value="&lt;font size=&quot;3&quot;&gt;Nếu phát hiện cháy&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="727.5" y="739.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-8" target="dYy4fB87pJzUasIUXKz9-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-10" target="dYy4fB87pJzUasIUXKz9-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="669.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-16" value="&lt;font size=&quot;3&quot;&gt;Nếu phát hiện rò rỉ&lt;br&gt;khí GAS&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="882" width="190" height="127.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-12" target="dYy4fB87pJzUasIUXKz9-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-18" target="dYy4fB87pJzUasIUXKz9-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-18" value="&lt;font size=&quot;3&quot;&gt;Gửi tin nhắn cảnh báo có cháy kèm theo số phòng cháy sau đó gọi điện và bật còi báo&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="647.5" y="507" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-12" target="dYy4fB87pJzUasIUXKz9-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-20" value="ĐÚNG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="822.5" y="667" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-21" value="SAI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="917.5" y="747" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-22" value="SAI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="662.5" y="747" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-23" value="ĐÚNG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="557.5" y="819.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-28" target="dYy4fB87pJzUasIUXKz9-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-28" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Gửi tin nhắn cảnh báo&lt;br&gt;rò rỉ khí GAS sau đó &lt;br&gt;gọi điện và bật hệ thống quạt gió&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="877.5" y="1059" width="195" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-16" target="dYy4fB87pJzUasIUXKz9-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-32" value="ĐÚNG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="970" y="1017" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-33" target="dYy4fB87pJzUasIUXKz9-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-33" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Tắt còi báo&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="497.5" y="1027" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-16" target="dYy4fB87pJzUasIUXKz9-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-37" value="SAI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="802.5" y="947" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-117" value="Bật hệ thống quạt" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1985" y="858.48" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-116" target="dYy4fB87pJzUasIUXKz9-117" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-41" value="&lt;font size=&quot;3&quot;&gt;Hàm setup() khởi tạo BLYNK và Serial&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1665" y="430" width="280" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-41" target="dYy4fB87pJzUasIUXKz9-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-45" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Nếu thấy có dữ liệu từ Arduino gửi đến&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1450" y="611.48" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-46" target="dYy4fB87pJzUasIUXKz9-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1860" y="868.48" />
+              <mxPoint x="1860" y="591.48" />
+              <mxPoint x="1640" y="591.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Đọc dữ liệu và giải mã, sau đó gửi lên BLYNK&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1545" y="818.48" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-112" value="ĐÚNG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="763.48" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-45" target="dYy4fB87pJzUasIUXKz9-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dYy4fB87pJzUasIUXKz9-45" target="dYy4fB87pJzUasIUXKz9-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1430" y="671.48" />
+              <mxPoint x="1430" y="591.48" />
+              <mxPoint x="1640" y="591.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="dYy4fB87pJzUasIUXKz9-116" target="dYy4fB87pJzUasIUXKz9-119" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-116" value="Giá trị ở chân ảo V3 == 1" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="680" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-119" value="Tắt hệ thống quạt" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1985" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-122" value="SAI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1785" y="837" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-123" value="ĐÚNG" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="2045" y="828.48" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dYy4fB87pJzUasIUXKz9-124" value="SAI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1985" y="656.48" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
