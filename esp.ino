@@ -1,8 +1,8 @@
 // Khai báo các macro để thư viện BLYNK sử dụng để truy cập
 // vào ứng dụng và Web của bạn
-#define BLYNK_TEMPLATE_ID "TMPL6mC7Pwjvx"
-#define BLYNK_TEMPLATE_NAME "SmartHome"
-#define BLYNK_AUTH_TOKEN "secqKtrRQ7oa9YhojI6-u2-Jd0AzuiGJ"
+#define BLYNK_TEMPLATE_ID "xxxxxx"
+#define BLYNK_TEMPLATE_NAME "xxxxx"
+#define BLYNK_AUTH_TOKEN "xxxxxx"
 #define BLYNK_PRINT Serial
 
 // Khai báo các thư viện sử dụng
